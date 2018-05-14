@@ -30,10 +30,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'unicorn'
 
 #for delaying job
-gem 'delayed_job_active_record'
+#gem 'delayed_job_active_record'
 
 #to run jobs
-gem 'daemons'
+#gem 'daemons'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -49,5 +49,8 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'mina', '0.3.3'
+  gem 'mina-sidekiq', '0.3.0', :require => false
+  gem 'mina-unicorn', '0.0.3', :require => false
 end
 
