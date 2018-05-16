@@ -1,0 +1,22 @@
+version: '2'
+services:
+  app:
+    image: default_image_name2
+    container_name: service2
+#    volumes:
+#     - /home/docker/nginx_apps/default:/etc/nginx/site-enabled/default
+    restart: always
+    ports:
+     - "80:80"
+    networks:
+      net:
+        ipv4_address: 192.168.3.2
+
+
+networks:
+  net:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 192.168.3.0/24
+         gateway: 192.168.3.1
