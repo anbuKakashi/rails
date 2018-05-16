@@ -5,18 +5,19 @@ services:
     container_name: service2
     volumes:
      - /home/docker16/research-doc1/shared/config/secrets.yml:/app/config/secrets.yml
+     - /home/docker16/research-doc1/shared/config/database.yml:/app/config/database.yml
     restart: always
     ports:
      - "80:80"
-#    networks:
-#      net:
-#        ipv4_address: 192.168.3.2
+    networks:
+      net:
+        ipv4_address: 192.168.3.2
 
 
-#networks:
-#  net:
-#    driver: bridge
-#    ipam:
-#     config:
-#       - subnet: 192.168.3.0/24
-#         gateway: 192.168.3.1
+networks:
+  net:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 192.168.3.0/24
+         gateway: 192.168.3.1
