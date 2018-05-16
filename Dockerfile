@@ -35,7 +35,7 @@ RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" > /etc/
 ## Install MySQL(for mysql, mysql2 gem)
 RUN apt-get install -qq -y libmysqlclient-dev
 
-COPY . .
+#COPY . .
 
 # Install Rails App
 WORKDIR /app
