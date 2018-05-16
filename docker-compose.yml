@@ -3,8 +3,8 @@ services:
   app:
     image: default_image_name2
     container_name: service2
-#    volumes:
-#     - /home/docker/nginx_apps/default:/etc/nginx/site-enabled/default
+    volumes:
+     - /home/docker16/research-doc1/shared/config/secrets.yml:/app/config/secrets.yml
     restart: always
     ports:
      - "80:80"
