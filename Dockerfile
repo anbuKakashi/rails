@@ -35,7 +35,7 @@ RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" > /etc/
 ## Install MySQL(for mysql, mysql2 gem)
 RUN apt-get install -qq -y libmysqlclient-dev
 
-ADD /home/docker16/research-doc1/shared/config/secrets.yml /config/secrets.yml
+ADD ../shared/config/secrets.yml /config/secrets.yml
 #COPY . .
 
 # Install Rails App
