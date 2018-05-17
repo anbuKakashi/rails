@@ -92,7 +92,7 @@ server unix:/app/shared/sockets/unicorn.sock fail_timeout=0;
 }
 
 server {
-listen 81;
+listen 80;
 server_name 192.168.1.14 192.168.3.3 192.168.43.63;
 
 root /app/;
