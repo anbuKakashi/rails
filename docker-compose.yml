@@ -3,9 +3,9 @@ services:
   app:
     image: default_image_name2
     container_name: service2
-    volumes:
-     - ../../shared/config/secrets.yml:/app/config/secrets.yml
-     - ../../shared/config/database.yml:/app/config/database.yml
+#    volumes:
+#     - ../../shared/config/secrets.yml:/app/config/secrets.yml
+#     - ../../shared/config/database.yml:/app/config/database.yml
     restart: always
     ports:
      - "80:80"
