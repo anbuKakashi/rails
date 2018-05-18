@@ -6,6 +6,7 @@ services:
 #    volumes:
 #     - ../../shared/config/secrets.yml:/app/config/secrets.yml
 #     - ../../shared/config/database.yml:/app/config/database.yml
+    pid: "host"
     restart: always
     ports:
      - "80:80"
