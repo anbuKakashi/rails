@@ -89,7 +89,7 @@
 upstream railss {
 # Path to Unicorn socket file
 #server unix:/app/shared/sockets/unicorn.sock fail_timeout=0;
-server 172.17.0.2:8080
+server 172.17.0.2:8080;
 }
 
 server {
