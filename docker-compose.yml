@@ -1,23 +1,23 @@
-version: '2'
+#version: '2'
 services:
-  app:
-    image: default_image_name2
-    container_name: service2
+#  app:
+    image: default_image_name3
+    container_name: service3
 #    volumes:
 #     - ../../shared/config/secrets.yml:/app/config/secrets.yml
 #     - ../../shared/config/database.yml:/app/config/database.yml
     restart: always
     ports:
      - "80:80"
-    networks:
-      net:
-        ipv4_address: 192.168.3.2
+#    networks:
+#      net:
+#        ipv4_address: 192.168.3.2
 
 
-networks:
-  net:
-    driver: bridge
-    ipam:
-     config:
-       - subnet: 192.168.3.0/24
-         gateway: 192.168.3.1
+#networks:
+#  net:
+#    driver: bridge
+#    ipam:
+#     config:
+#       - subnet: 192.168.3.0/24
+#         gateway: 192.168.3.1
