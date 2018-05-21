@@ -1,8 +1,8 @@
 #version: '2'
 services:
 #  app:
-    image: default_image_name3
-    container_name: service3
+    image: default_image_name4
+    container_name: service4
 #    volumes:
 #     - ../../shared/config/secrets.yml:/app/config/secrets.yml
 #     - ../../shared/config/database.yml:/app/config/database.yml
