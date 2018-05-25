@@ -56,6 +56,6 @@ ADD Procfile /app/Procfile
 ENV RAILS_ENV production
 #ENV RAILS_ENV development
 
-EXPOSE 8083
+EXPOSE 8083 80
 
 CMD bundle exec rake assets:precompile && foreman start -f Procfile
